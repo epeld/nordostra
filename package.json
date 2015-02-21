@@ -1,0 +1,17 @@
+{
+  "name": "nordostra",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "~3.8.11",
+    "jade": "~1.9.2",
+    "stylus": "~0.50.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik Peldan",
+  "license": "ISC"
+}

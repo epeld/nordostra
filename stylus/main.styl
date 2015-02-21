@@ -1,0 +1,77 @@
+body
+    margin 0
+
+nav-item()
+    display block
+    margin 5px 10px
+    line-height 20px
+
+clear()
+    display block
+    content " "
+    clear both
+
+.nav-item
+    float left
+    nav-item()
+
+.nav-item--right
+    float:right
+    nav-item()
+
+.big
+    font-size larger
+
+.nav
+    &::after,&::before
+        clear()
+
+.header
+    //color white
+    background-color #e0d0ff
+    padding 15px 0 35px 40px
+
+h1
+    font-size 40px
+
+
+h2
+    font-weight 400
+
+.sub
+    font-size 25px
+    font-weight normal
+    //color #e0d0ff
+
+    &::after
+        content " "
+        clear both
+        display block
+
+
+.nav,.content
+    -webkit-padding-start 0
+    padding-left 40px
+    padding-right 40px
+
+.logo
+    margin-right 15px
+    float left
+
+.image-container
+    max-width 300px
+    margin-right 25px
+    img
+        max-width 100%
+        height: auto
+        display block
+    float left
+
+.image-text
+    text-align center
+    font-style italic
+
+.images
+    margin 15px auto
+    &::after
+        clear()
