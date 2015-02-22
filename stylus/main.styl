@@ -10,8 +10,15 @@ body
 
 nav-item()
     display block
-    margin 5px 10px
-    line-height 20px
+    a
+        line-height 20px
+        padding 10px 15px
+        display inline-block
+        text-decoration none !important
+        color black
+    a:hover
+        background-color darkgreen
+        color lightgreen
 
 clear()
     display block
@@ -62,7 +69,7 @@ h2
     background-color lightgreen
     margin-bottom 40px
 
-.nav,.content
+.content
     -webkit-padding-start 0
     padding 15px 40px
 

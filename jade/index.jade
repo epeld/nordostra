@@ -4,14 +4,20 @@ html(lang="se")
         title F&ouml;rsvarsutbildarna Nord&ouml;stra
         link(href='/styles/main.css', rel='stylesheet')
     body
-        ul.nav
-            li.nav-item.big Nordöstra
-            li.nav-item Verksamhet
-            li.nav-item Rekrytering
-            li.nav-item Vanliga Fr&aring;gor
+        ul.nav(id="top")
+            li.nav-item.big
+                a(href="#top") Nordöstra
+            li.nav-item 
+                a(href="#verksamhet") Verksamhet
+            li.nav-item 
+                a(href="#rekrytering") Rekrytering
+            li.nav-item 
+                a(href="#faq") Vanliga Fr&aring;gor
 
-            li.nav-item--right Schema
-            li.nav-item--right Kontakt
+            li.nav-item--right
+                a(href="#") Schema
+            li.nav-item--right
+                a(href="#") Kontakt
 
 
         .header
@@ -62,7 +68,7 @@ html(lang="se")
 
         .content
 
-            h2 Vår Verksamhet
+            h2(id="verksamhet") Vår Verksamhet
             p Vår verksamhet bygger på utbildning enligt Försvarsutbildarnas kursplan för ungdomsverksamheten.
             
             div Detta är ett urval av det som ingår:
@@ -76,7 +82,7 @@ html(lang="se")
                 p Det är också möjligt att gå extra kurser på vinterloven. Här till vänster har ni en bild från en sådan kurs. Man lär sig bl.a. att åka Försvarsmaktens skidor "Vita Blixten", tolka bakom bandvagn, bo i snökantsgrop, m.m.
 
         .content
-            h2 Rekrytering
+            h2(id="rekrytering") Rekrytering
             p Vi rekryterar i huvudsak i dessa områden:
 
             p Täby, Vallentuna, Danderyd, Enebyberg, Waxholm, Åkersberga med omnejd.
@@ -89,7 +95,7 @@ html(lang="se")
 
         .content
 
-            h2 Våra Krav
+            h2(id="krav") Våra Krav
             p Det finns två krav för att få göra denna utbildnig.
              
                 ul.list
@@ -105,7 +111,7 @@ html(lang="se")
             a.sign-up(href="#") Anmäl dig här
         
         .content
-            h2 Vanliga Frågor
+            h2(id="faq") Vanliga Frågor
             
             ul.faq-list
                 li.faq
