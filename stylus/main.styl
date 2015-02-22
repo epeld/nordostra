@@ -99,3 +99,24 @@ h2
     width 100px
     margin 40px auto
     border-top 1px solid darkgreen
+
+.logo-separator
+    padding 45px 0
+    background-image url("/images/camo.gif")
+
+.question
+    font-style italic
+    margin-bottom 5px
+
+.answer
+    &::before
+        content " - "
+
+.list
+    list-style none
+    li::before
+        content " * "
+.faq-list
+    list-style-type upper-alpha
+.faq
+    margin-bottom 25px
