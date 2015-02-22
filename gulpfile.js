@@ -19,4 +19,8 @@ gulp.task('images', function() {
     return gulp.src('images/*').pipe(gulp.dest("build/images"));
 });
 
-gulp.task('default', ['styles', 'html', 'images']);
+gulp.task('fonts', function() {
+    return gulp.src('fonts/*').pipe(gulp.dest("build/fonts"));
+});
+
+gulp.task('default', ['styles', 'html', 'images', 'fonts']);

@@ -2,11 +2,23 @@ midgreen = #7c7f70
 lightgreen = #bdbdb2
 darkgreen = #514f50
 
+@font-face
+    font-family:"TopSecret";
+    src: url("/fonts/topsecret.ttf")
+
+link()
+    text-decoration none !important
+    font-family "TopSecret"
+    font-size 1.2em
+
 body
     font-family Courier
     margin 0
     background-color lightgreen
 
+h2
+    text-transform uppercase
+    margin-bottom 20px
 
 nav-item()
     display block
@@ -60,6 +72,7 @@ h2
 .sub
     font-size 25px
     font-weight normal
+    font-family "Courier"
     //color #e0d0ff
 
 .info
@@ -118,6 +131,17 @@ h2
 .answer
     &::before
         content " - "
+
+.link, .sign-up
+    link()
+.sign-up
+    color red
+    &:hover
+        color black
+.link
+    color black
+    &:hover
+        color darkgreen
 
 .list
     list-style none
