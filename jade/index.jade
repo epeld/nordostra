@@ -5,7 +5,7 @@ html(lang="se")
         link(href='/styles/main.css', rel='stylesheet')
     body
         ul.nav
-            li.nav-item.big Nordostra
+            li.nav-item.big Nordöstra
             li.nav-item Verksamhet
             li.nav-item Rekrytering
             li.nav-item Vanliga Fr&aring;gor
@@ -13,33 +13,52 @@ html(lang="se")
             li.nav-item--right Schema
             li.nav-item--right Kontakt
 
+
         .header
             img.logo(src="/images/fulogga.png")
             h1 F&oumlrsvarsutbildarna
                 .sub Ungdom - Nord&ouml;stra 
 
-        .content
-            h2 Välkommen till Försvarsutbildarna Ungdom Nordöstra.
-            
-            p Vi är en ungdomsavdelning tillhörande Försvarsutbildarna Stockholm och
-                Stockholms Hemvärns-Försvarsutbildarförening.
 
-            p Målet med verksamheten är att rekrytera och utbilda ungdomar mellan 15-20 år.
-                Vår utbildning innehåller bl.a. skytte, signalering, orientering, spaning, sjukvård och mycket annat.
+
+        .content
+            p Vi är en ungdomsavdelning tillhörande Försvarsutbildarna Stockholm och Stockholms Hemvärns-Försvarsutbildarförening.
+
+            p Målet med verksamheten är att rekrytera och utbilda ungdomar mellan 15-20 år. Vår utbildning innehåller bl.a. skytte, signalering, orientering, spaning, sjukvård och mycket annat.
             
             p Vi förbereder ungdomar inför en möjlig militär grundutbildning och lär dem något utöver det vanliga.
                 
-            p Klicka <a href="#">här</a> om du vill veta mer!
+            p
+                | Klicka
+                | <a href="#">här</a>
+                | om du vill veta mer!
 
-            .images
-                .image-container
+        hr.half-rule
+        .images
+            .image-container
+                .frame
                     img(src="/images/img1.jpg")
-                    .image-text Patrull ute på spaning
+                .image-text Patrull ute på spaning
 
-                .image-container
+            .image-container
+                .frame
                     img(src="/images/img2.jpg")
-                    .image-text Marsch mot övningsområdet
+                .image-text Marsch mot övningsområdet
 
-            p Vi utbildar alla våra ungdomar i egentligen samma saker som man lär sig under sin värnplikt.
-             
-            p Många av våra tidigare ungdomar har blivit yrkesofficerare, fått chefspositioner inom det militära eller andra förtroendeuppdrag. 
+            .image-container
+                .frame
+                    img(src="/images/img1.jpg")
+                .image-text Vinterslutkurs
+
+            .image-container
+                .frame
+                    img(src="/images/img2.jpg")
+                .image-text Sommarslutövning
+        hr.half-rule
+
+        .content
+            .info
+                p Vi utbildar alla våra ungdomar i egentligen samma saker som man lär sig under sin värnplikt. 
+                
+                p Många av våra tidigare ungdomar har blivit yrkesofficerare, fått chefspositioner inom det militära eller andra förtroendeuppdrag. 
+

@@ -1,5 +1,12 @@
+midgreen = #7c7f70
+lightgreen = #bdbdb2
+darkgreen = #514f50
+
 body
+    font-family Courier
     margin 0
+    background-color lightgreen
+
 
 nav-item()
     display block
@@ -22,14 +29,19 @@ clear()
 .big
     font-size larger
 
+
 .nav
+    margin 0
+    background-color midgreen
     &::after,&::before
         clear()
 
 .header
     //color white
+    font-family Palatino
     background-color #e0d0ff
-    padding 15px 0 35px 40px
+    background-image url("/images/camo.gif")
+    padding 35px 0 75px 40px
 
 h1
     font-size 40px
@@ -43,35 +55,47 @@ h2
     font-weight normal
     //color #e0d0ff
 
-    &::after
-        content " "
-        clear both
-        display block
+.info
+    clear()
 
+.content
+    background-color lightgreen
+    margin-bottom 40px
 
 .nav,.content
     -webkit-padding-start 0
-    padding-left 40px
-    padding-right 40px
+    padding 15px 40px
 
 .logo
+    max-width: 92px
     margin-right 15px
     float left
 
 .image-container
-    max-width 300px
-    margin-right 25px
+    max-width 25%
     img
         max-width 100%
-        height: auto
         display block
     float left
+
+.frame
+    padding 0 5px
 
 .image-text
     text-align center
     font-style italic
+    clear both
 
 .images
-    margin 15px auto
+    font-family Georgia
+    padding 35px 35px
+    margin 0 auto
+    background midgreen
     &::after
         clear()
+
+.half-rule
+    display none
+    width 100px
+    margin 40px auto
+    border-top 1px solid darkgreen
