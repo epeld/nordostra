@@ -3,126 +3,128 @@ html(lang="se")
     head
         title F&ouml;rsvarsutbildarna Nord&ouml;stra
         link(href='/styles/main.css', rel='stylesheet')
+
     body
-        ul.nav(id="top")
-            li.nav-item.big
-                a(href="#top") Nordöstra
-            li.nav-item 
-                a(href="#verksamhet") Verksamhet
-            li.nav-item 
-                a(href="#rekrytering") Rekrytering
-            li.nav-item 
-                a(href="#faq") Vanliga Fr&aring;gor
+        div.container
+            ul.nav
+                li.nav-item.big
+                    a(href="#top") Nordöstra
+                li.nav-item 
+                    a(href="#verksamhet") Verksamhet
+                li.nav-item 
+                    a(href="#rekrytering") Rekrytering
+                li.nav-item 
+                    a(href="#faq") Vanliga Fr&aring;gor
 
-            li.nav-item--right
-                a(href="#") Schema
-            li.nav-item--right
-                a(href="#") Kontakt
-
-
-        .header
-            img.logo(src="/images/fulogga.png")
-            h1 F&oumlrsvarsutbildarna
-                .sub Ungdom - Nord&ouml;stra 
+                li.nav-item--right
+                    a(href="#") Schema
+                li.nav-item--right
+                    a(href="#") Kontakt
 
 
+        .container
+            .header
+                h1 F&oumlrsvarsutbildarna
+                    .sub Ungdom - Nord&ouml;stra 
+                p.intro Vi är en ungdomsavdelning tillhörande Försvarsutbildarna Stockholm och Stockholms Hemvärns-Försvarsutbildarförening.
 
-        .content
-            p Vi är en ungdomsavdelning tillhörande Försvarsutbildarna Stockholm och Stockholms Hemvärns-Försvarsutbildarförening.
 
-            p Målet med verksamheten är att rekrytera och utbilda ungdomar mellan 15-20 år. Vår utbildning innehåller bl.a. skytte, signalering, orientering, spaning, sjukvård och mycket annat.
-            
-            p Vi förbereder ungdomar inför en möjlig militär grundutbildning och lär dem något utöver det vanliga.
+
+            .content
+
+                h2(id="verksamhet") Vår Verksamhet
+                a(href="#anmalan").secret Till Anmälan
+                p Vår verksamhet bygger på utbildning enligt Försvarsutbildarnas kursplan för ungdomsverksamheten.
                 
-            p
-                | Klicka
-                | <a class="link" href="#verksamhet">här</a>
-                | om du vill veta mer!
+                div Detta är ett urval av det som ingår:
+                    ul.list
+                        li Militärt skytte
+                        li Sjukvård
+                        li Radiosamband
+                        li Spaning
+                        li Förläggning
 
-            p Vi utbildar alla våra ungdomar i egentligen samma saker som man lär sig under sin värnplikt. 
-            
-            p Många av våra tidigare ungdomar har blivit yrkesofficerare, fått chefspositioner inom det militära eller andra förtroendeuppdrag. 
-
-        hr.half-rule
-        .images
-            .image-container
-                .frame
-                    img(src="/images/img1.jpg")
-                .image-text Patrull ute på spaning
-
-            .image-container
-                .frame
-                    img(src="/images/img2.jpg")
-                .image-text Marsch mot övningsområdet
-
-            .image-container
-                .frame
-                    img(src="/images/vinterkurs.jpg")
-                .image-text Vinterkurs
-
-            .image-container
-                .frame
-                    img(src="/images/sommarslutovn.jpg")
-                .image-text Sommarslutövning
-        hr.half-rule
-
-        .content
-
-            h2(id="verksamhet") Vår Verksamhet
-            p Vår verksamhet bygger på utbildning enligt Försvarsutbildarnas kursplan för ungdomsverksamheten.
-            
-            div Detta är ett urval av det som ingår:
-                ul.list
-                    li Militärt skytte
-                    li Sjukvård
-                    li Radiosamband
-                    li Spaning
-                    li Förläggning
+                p Målet med verksamheten är att rekrytera och utbilda ungdomar mellan 15-20 år. Vår utbildning innehåller bl.a. skytte, signalering, orientering, spaning, sjukvård och mycket annat.
+                
+                p Vi förbereder ungdomar inför en möjlig militär grundutbildning och lär dem något utöver det vanliga.
                     
+                p
+                    | Klicka
+                    | <a class="link" href="#verksamhet">här</a>
+                    | om du vill veta mer!
+
+                p Vi utbildar alla våra ungdomar i egentligen samma saker som man lär sig under sin värnplikt. 
+                
+                p Många av våra tidigare ungdomar har blivit yrkesofficerare, fått chefspositioner inom det militära eller andra förtroendeuppdrag. 
+                        
                 p Det är också möjligt att gå extra kurser på vinterloven. Här till vänster har ni en bild från en sådan kurs. Man lär sig bl.a. att åka Försvarsmaktens skidor "Vita Blixten", tolka bakom bandvagn, bo i snökantsgrop, m.m.
 
-        .content
-            h2(id="rekrytering") Rekrytering
-            p Vi rekryterar i huvudsak i dessa områden:
 
-            p Täby, Vallentuna, Danderyd, Enebyberg, Waxholm, Åkersberga med omnejd.
-             
-            p Även om du inte bor i dessa områden är du välkommen att vara medlem i vår avdelning.
+            hr.half-rule
+            .images
+                .image-container
+                    .frame
+                        img(src="/images/img1.jpg")
+                    .image-text Patrull ute på spaning
 
-            p Men om du är intresserad av att börja i Nordöstra, tveka inte att ta kontakt med oss, vi ser till att du kommer med så snabbt som möjligt, oftast innan rekryteringen börjar.
-                 
-        .content
+                .image-container
+                    .frame
+                        img(src="/images/img2.jpg")
+                    .image-text Marsch mot övningsområdet
 
-            h2(id="krav") Våra Krav
-            p Det finns två krav för att få göra denna utbildnig.
-             
-                ul.list
-                    li Fyllt 15 år
-                 
-                    li Lämplighet för verksamheten
-                     
-            p Det betyder att du måste ha fyllt 15 år och att din fysiska förmåga klarar av våran utbildning. Dessutom får du inte ha några politiska, rasistiska eller sexuella åsikter som strider mot svensk lag.
-            p Om du bryter mot dessa kommer du att med omedelbar verkan att uteslutas ur verksamheten!
-                             
-            p.emph OBS! Man behöver inte vara atlet för att fixa denna utbildning, men sund fysik hjälper!
+                .image-container
+                    .frame
+                        img(src="/images/vinterkurs.jpg")
+                    .image-text Vinterkurs
 
-        .content
-            h2(id="faq") Vanliga Frågor
-            
-            ul.faq-list
-                li.faq
-                    .question Får man utrustning av er, eller ska man stå för den själv?
-                    .answer All utrustning som behövs för verksamheten kommer du att få låna av Försvarsmakten. Du kommer att få utkvittera en uniform modell 90, som du förvarar i hemmet.
+                .image-container
+                    .frame
+                        img(src="/images/sommarslutovn.jpg")
+                    .image-text Sommarslutövning
+            hr.half-rule
+
+            .content
+                h2(id="rekrytering") Rekrytering
+                p Vi rekryterar i huvudsak i dessa områden:
+
+                p Täby, Vallentuna, Danderyd, Enebyberg, Waxholm, Åkersberga med omnejd.
+                
+                p Även om du inte bor i dessa områden är du välkommen att vara medlem i vår avdelning.
+
+                p Men om du är intresserad av att börja i Nordöstra, tveka inte att ta kontakt med oss, vi ser till att du kommer med så snabbt som möjligt, oftast innan rekryteringen börjar.
                     
-                li.faq
-                    .question Hur ofta är det övning?
-                    .answer Vi håller lektion varannan vecka, och dygnsövningar en gång i månaden.
+            .content
 
-                li.faq
-                    .question Behöver man vara atlet för att kunna vara med i Nordöstra?
-                    .answer Nej, det behöver man inte. Man kommer att få bättre kondition hos oss, och vi lägger nivån så att den passar alla.
+                h2(id="krav") Våra Krav
+                p Det finns två krav för att få göra denna utbildnig.
+                
+                    ul.list
+                        li Fyllt 15 år
+                    
+                        li Lämplighet för verksamheten
+                        
+                p Det betyder att du måste ha fyllt 15 år och att din fysiska förmåga klarar av våran utbildning. Dessutom får du inte ha några politiska, rasistiska eller sexuella åsikter som strider mot svensk lag.
+                p Om du bryter mot dessa kommer du att med omedelbar verkan att uteslutas ur verksamheten!
+                                
+                p.emph OBS! Man behöver inte vara atlet för att fixa denna utbildning, men sund fysik hjälper!
 
-                li.faq      
-                    .question Om jag bor i Vallentuna, kan jag gå med i Nordöstra då?
-                    .answer Ja, det kan du. Nordöstra rekryterar ungdomar från Täby, Vallentuna, Danderyd, Åkersberga, Enebyberg och Waxholm. Även om du inte bor i de kommunerna så kan du gå med i Nordöstra.
-            a.sign-up(href="#") Anmäl dig här
+            .content
+                h2(id="faq") Vanliga Frågor
+                
+                ul.faq-list
+                    li.faq
+                        .question Får man utrustning av er, eller ska man stå för den själv?
+                        .answer All utrustning som behövs för verksamheten kommer du att få låna av Försvarsmakten. Du kommer att få utkvittera en uniform modell 90, som du förvarar i hemmet.
+                        
+                    li.faq
+                        .question Hur ofta är det övning?
+                        .answer Vi håller lektion varannan vecka, och dygnsövningar en gång i månaden.
+
+                    li.faq
+                        .question Behöver man vara atlet för att kunna vara med i Nordöstra?
+                        .answer Nej, det behöver man inte. Man kommer att få bättre kondition hos oss, och vi lägger nivån så att den passar alla.
+
+                    li.faq      
+                        .question Om jag bor i Vallentuna, kan jag gå med i Nordöstra då?
+                        .answer Ja, det kan du. Nordöstra rekryterar ungdomar från Täby, Vallentuna, Danderyd, Åkersberga, Enebyberg och Waxholm. Även om du inte bor i de kommunerna så kan du gå med i Nordöstra.
+                a.sign-up(href="#") Anmäl dig här
