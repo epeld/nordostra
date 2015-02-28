@@ -1,0 +1,58 @@
+doctype html
+html(lang="se")
+    {% load staticfiles %}
+    head
+        include jade/head.jade
+
+    body
+        div.container
+            include jade/nav.jade
+
+        .container
+            .header
+                h1 Gå med i Försvarsutbildarna
+                p.intro Fyll i formuläret nedan för att gå med oss
+
+            .content
+                h2 Vad är Försvarsutbildarna?
+                p Försvarsutbildarna är en frivilligorganisation underställd Försvarsmakten som tillhandahåller utbildning för såväl egna medlemmar som för hemvärn och andra frivilligorganisationer. Huvudverksamheten är utbildning för de som redan har genomgått militär grundutbildning men det finns även en väletablerad ungdomsverksamhet som har totalt 51 ungdomsavdelningar över hela landet. Ungdomsutbildningens syfte är att ge ungdomar en meningsfull fritidssysselsättning samt att informera om Försvarsmakten och dess verksamhet. För att få delta i utbildningen måste man vara minst 15 år gammal. Utbildningen är öppen för alla som innehar svenskt medborgarskap. Killar som tjejer. Det krävs inte att man är någon atlet för att vara med i verksamheten men det underlättar med en sund kondition.
+                 
+                p Utbildningen kan innehålla exempelvis spaning, patruller, genomsök av personer och fordon, internationell tjänst, överlevnad, skytte och för de som är lite äldre även viss strid. Att få delta i strid kräver även att man deltagit i verksamheten aktivt.
+                     
+                p Varje år genomförs en landsomfattande tävling där alla Sveriges lokalföreningar samt vissa utländska, inbjuds till en tävling i de olika moment som Försvarsutbildarna utbildar i. Detta är en tuff tävling med fysiskt krävande moment som verkligen kan vara något för dig som är tävlingsinriktad och tycker verksamheten är rolig! Nordöstra har ambitionen att alltid hamna på den övre halvan på resultattavlan. Kanske du har hjärnan och hjärtat som krävs för att ta oss hela vägen? 
+
+                p Snart är det dags för oss att komma igång med vår verksamhet igen! Vi håller till i Hemvärnsgården i Täby på Marknadsvägen 249, 183 79 TÄBY
+
+                a(href="http://www.hitta.se/s%C3%B6dra+roslags+hemv%C3%A4rn/t%C3%A4by/zgWsvGbeuc?vad=s%C3%B6dra+roslags+hemv%C3%A4rn") Tryck här för en karta
+                             
+                p Ta med alla dina kompisar som du tror kan vara intresserade av verksamheten så vågar vi lova att du kommer få uppleva ett läsår fyllt av saker du aldrig tidigare varit med om samt många minnen för livet!
+                                 
+                p Tänk på att det är bättre att komma och känna på verksamheten om man är osäker. Det är kostnadsfritt och om du inte vill vara kvar så kan du alltid gå ur när du vill.
+                                     
+                p Varmt välkommen!
+
+                form(id="anmalan", method="post", action="http://www.olzzon.com/cgi-bin/p.cgi?epost=nordostra@karby.nu&id=1")
+                    fieldset
+                        legend Anmälningsformulär
+                        p Fyll i detta formulär för att gå med i försvarsutbildarna. Efter att du postat formuläret kommer vi att kontakta dig. 
+                        
+                        p Du kan också skriva till oss direkt på 
+                            a(href="mailto:instruktor@nordostra.se") instruktor@nordostra.se
+
+                        .input-row
+                            label(for="fran_namn") Namn
+                            input(type="text", name="fran_namn")
+
+                        .input-row
+                            label(for="fran_epost") E-post
+                            input(type="text", name="fran_epost")
+
+                        .input-row
+                            label(for="amne") Rubrik
+                            span(type="text", name="amne") Test
+
+                        .input-row
+                            label(for="text") Meddelande
+                            textarea(form="anmalan")
+
+                        input(type="submit", value="Skicka")
