@@ -4,5 +4,12 @@ ul.nav
     li.nav-item 
         a(href="/enlist") Ny Rekryt
 
+    {% if user.is_authenticated %}
     li.nav-item--right
-        a(href="#") Schema
+        a(href="{% url 'admin:index' %}") Admin
+    {% else %}
+    li.nav-item--right
+        a(href="{% url 'admin:index' %}") Logga In
+    {% endif %}
+    li.nav-item--right
+        a(href="/narvaro") Schema

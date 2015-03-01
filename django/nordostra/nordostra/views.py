@@ -5,10 +5,10 @@ from django.shortcuts import render_to_response
 # TODO serve these things by a faster web server!
 def index(request):
     n = []
-    return render_to_response('jade/index.jade', {'news': n})
+    return render_to_response('jade/index.jade', {'news': n, 'user': request.user})
 
 def enlist(request):
-    return render_to_response('jade/enlist.jade', {})
+    return render_to_response('jade/enlist.jade', {'user': request.user})
 
 def styles(request):
-    return render_to_response('styles/style.css', {})
+    return render_to_response('styles/style.css', {'user': request.user})
