@@ -15,8 +15,20 @@ html(lang="se")
                 p.intro Vi är en ungdomsavdelning tillhörande Försvarsutbildarna Stockholm och Stockholms Hemvärns-Försvarsutbildarförening.
                 a(href="{% url 'enlist' %}#anmalan").secret Till Anmälan
 
-            .content
+            {% if news %}
+            .content.news
+                h2(id="news") Senaste Nyheter
+                {% for n in news %}
+                .news-item
+                    .news-item_date {{ n.date }}
+                    .news-item_content {{ n.content }}
+                    .news-item_author {{ n.author }}
 
+                {% endfor %}
+            {% endif %}
+
+
+            .content
                 h2(id="verksamhet") Vår Verksamhet
                 p Vår verksamhet bygger på utbildning enligt Försvarsutbildarnas kursplan för ungdomsverksamheten.
                 

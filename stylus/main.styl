@@ -196,12 +196,23 @@ legend
     color darkgreen
     font-size 1.5em
 
-.session
-    margin-bottom 18px
+.session, .news-item
+    margin-bottom 28px
 
-.session_header
+.news
+    float right
+    padding 20px 16px
+    border-left solid 1px darkgreen
+
+.session_header, .news-item_date
     color darkgreen
     font-weight 500
+
+.news-item_author
+    margin-top 12px
+    font-style italic
+    &::before
+        content "   "
 
 .session_info--description, .session_info--attendance
     margin-left 30px
