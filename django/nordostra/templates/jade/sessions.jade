@@ -16,21 +16,37 @@ html(lang="se")
 
                 h2(id="kommande") Kommande Tillfällen
 
-                TODO
+                {% for s in coming %}
+                .session
+                    .session_header 
+                        {% if user.is_staff %}
+                        a(href="{{ s.get_admin_url }}") {{ s.date }}
+                        {% else %}
+                        .session_header {{ s.date }}
+                        {% endif %}
+
+                    .session_info--description  {{ s.description }}
+
+                {% endfor %}
 
                 h2(id="avslutade") Avslutade Tillfällen
 
                 {% for s in sessions %}
                 .session
-                    .session_header {{ s.date }}
+                    .session_header 
+                        {% if user.is_staff %}
+                        a(href="{{ s.get_admin_url }}") {{ s.date }}
+                        {% else %}
+                        .session_header {{ s.date }}
+                        {% endif %}
                         {% if user in s.attendees.all %}
                         .session_info--positive Du närvarade
                         {% else %}
                         .session_info--negative Du närvarade INTE
                         {% endif %}
 
-                    {% if user.is_staff %}
                     .session_info--description  {{ s.description }}
+                    {% if user.is_staff %}
                     .session_info--attendance Närvaro: {{ s.attendees.count }} av {{ num_users }} ({% widthratio s.attendees.count num_users 100 %}%)
                     {% endif %}
 
