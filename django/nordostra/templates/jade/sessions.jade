@@ -15,6 +15,7 @@ html(lang="se")
             .content
 
                 h2(id="kommande") Kommande Tillfällen
+                {% if coming %}
 
                 {% for s in coming %}
                 .session
@@ -28,7 +29,11 @@ html(lang="se")
                     .session_info--description  {{ s.description }}
 
                 {% endfor %}
+                {% else %}
+                p Det finns för närvarande inga kommande tillfällen noterade.
+                {% endif %}
 
+                {% if sessions %}
                 h2(id="avslutade") Avslutade Tillfällen
 
                 {% for s in sessions %}
@@ -51,3 +56,6 @@ html(lang="se")
                     {% endif %}
 
                 {% endfor %}
+                {% else %}
+                p Det finns för närvarande inga avslutade tillfällen noterade.
+                {% endif %}
