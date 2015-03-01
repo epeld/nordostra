@@ -49,10 +49,10 @@ html(lang="se")
 
                         .input-row
                             label(for="amne") Rubrik
-                            span(type="text", name="amne") Test
+                            input(type="text", name="amne")
 
-                        .input-row
+                        .input-row--message
                             label(for="text") Meddelande
-                            textarea(form="anmalan")
+                            textarea(form="anmalan", rows="5", cols="50")
 
                         input(type="submit", value="Skicka")
