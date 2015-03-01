@@ -1,0 +1,37 @@
+doctype html
+html(lang="se")
+    {% load staticfiles %}
+    head
+        include jade/head.jade
+
+    body
+        div.container
+            include jade/nav.jade
+
+        .container
+            .header
+                h1 Närvaro
+
+            .content
+
+                h2(id="kommande") Kommande Tillfällen
+
+                TODO
+
+                h2(id="avslutade") Avslutade Tillfällen
+
+                {% for s in sessions %}
+                .session
+                    .session_header {{ s.date }}
+                        {% if user in s.attendees.all %}
+                        .session_info--positive Du närvarade
+                        {% else %}
+                        .session_info--negative Du närvarade INTE
+                        {% endif %}
+
+                    {% if user.is_staff %}
+                    .session_info--description  {{ s.description }}
+                    .session_info--attendance Närvaro: {{ s.attendees.count }} av {{ num_users }} ({% widthratio s.attendees.count num_users 100 %}%)
+                    {% endif %}
+
+                {% endfor %}
