@@ -1,0 +1,11 @@
+Help out Nordostra kompaniet with their website
+
+The django site is located under django/
+
+Running
+> gulp
+will compile the styles and copy them into django's static directory
+
+To run:
+> cd django && python manage.py syncdb && python manage.py runserver
+
