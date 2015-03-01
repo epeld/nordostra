@@ -9,3 +9,6 @@ class Session(models.Model):
 
     # A user can attend many sessions, and a session can have many users attending
     attendees = models.ManyToManyField(User)
+
+    def __str__(self):
+        return "{0} - {1}".format(self.date, self.description)
